@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作物遥感大家庭（华中农业大学）</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .member {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #e8f0fe;
+            border-radius: 5px;
+        }
+        .contact a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .join-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            text-align: center;
+        }
+        .modal button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>作物遥感大家庭（<a href="https://www.hzau.edu.cn/" target="_blank">华中农业大学</a>）</h1>
+        <button class="join-button" onclick="showModal()">加入我们</button>
+        <p><em>专注于遥感技术在农业中的应用，涵盖作物长势监测、LAI反演等研究方向</em></p>
+        
+        <div class="section">
+            <h2>团队成员</h2>
+            
+            <div class="member">
+                <h3>李教授（副教授）</h3>
+                <p>研究方向：农业遥感、作物生长模拟</p>
+                <p>教育经历：博士，遥感科学，华中农业大学</p>
+                <p>荣誉：国家优秀青年科学基金获得者</p>
+                <p class="contact">邮箱: <a href="mailto:li@email.com">li@email.com</a></p>
+            </div>
+            
+            <div class="member">
+                <h3>王博士（博士研究生）</h3>
+                <p>研究方向：作物LAI反演、深度学习</p>
+                <p>教育经历：博士在读，华中农业大学</p>
+                <p>荣誉：国际遥感大会最佳论文奖</p>
+                <p class="contact">邮箱: <a href="mailto:wang@email.com">wang@email.com</a></p>
+            </div>
+            
+            <div class="member">
+                <h3>张博士（博士研究生）</h3>
+                <p>研究方向：高光谱遥感、土壤湿度监测</p>
+                <p>教育经历：博士在读，华中农业大学</p>
+                <p>荣誉：博士生国家奖学金</p>
+                <p class="contact">邮箱: <a href="mailto:zhang@email.com">zhang@email.com</a></p>
+            </div>
+            
+            <div class="member">
+                <h3>刘同学（硕士研究生二年级）</h3>
+                <p>研究方向：多源遥感数据融合</p>
+                <p>教育经历：硕士在读，华中农业大学</p>
+                <p>荣誉：优秀研究生</p>
+                <p class="contact">邮箱: <a href="mailto:liu@email.com">liu@email.com</a></p>
+            </div>
+            
+            <div class="member">
+                <h3>赵同学（硕士研究生二年级）</h3>
+                <p>研究方向：植被指数分析</p>
+                <p>教育经历：硕士在读，华中农业大学</p>
+                <p>荣誉：国际会议优秀报告奖</p>
+                <p class="contact">邮箱: <a href="mailto:zhao@email.com">zhao@email.com</a></p>
+            </div>
+            
+            <div class="member">
+                <h3>孙同学（硕士研究生一年级）</h3>
+                <p>研究方向：SAR遥感与作物监测</p>
+                <p>教育经历：硕士在读，华中农业大学</p>
+                <p>荣誉：研究生新生奖学金</p>
+                <p class="contact">邮箱: <a href="mailto:sun@email.com">sun@email.com</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="joinModal" class="modal">
+        <p>QQ群号：123456789</p>
+        <p>欢迎加入！！</p>
+        <button onclick="closeModal()">关闭</button>
+    </div>
+    
+    <script>
+        function showModal() {
+            document.getElementById('joinModal').style.display = 'block';
+        }
+        function closeModal() {
+            document.getElementById('joinModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
